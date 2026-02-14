@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NDTech - Plan de Negocio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        slate: {
+                            900: '#0f172a',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'glow': 'glow 3s infinite ease-in-out',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        glow: {
+                            '0%, 100%': { opacity: '0.3' },
+                            '50%': { opacity: '0.6' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        }
+        .section-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+        }
+        .hero-mesh {
+            background-color: #ffffff;
+            background-image: radial-gradient(at 0% 0%, hsla(202,100%,95%,1) 0, transparent 50%), 
+                              radial-gradient(at 100% 0%, hsla(202,100%,90%,1) 0, transparent 50%);
+        }
+        .accent-line {
+            height: 4px;
+            width: 60px;
+            background: linear-gradient(to right, #0284c7, #38bdf8);
+            border-radius: 2px;
+            margin-bottom: 1.5rem;
+        }
+        .prose p {
+            line-height: 1.75;
+            margin-bottom: 1.25rem;
+            color: #334155;
+        }
+        .scroll-indicator {
+            width: 2px;
+            height: 40px;
+            background: linear-gradient(to bottom, #0284c7, transparent);
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="font-body antialiased">
+
+    <!-- Sticky Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary-600/20">ND</div>
+                <h1 class="text-2xl font-display font-extrabold tracking-tight text-slate-900">NDTech</h1>
+            </div>
+            <div class="hidden md:block">
+                <span class="text-sm font-semibold tracking-widest uppercase text-primary-600 border-l-2 border-primary-600 pl-4">Plan de Negocios</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-20 px-6 hero-mesh relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10 animate-fade-in-up">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-primary-700 uppercase bg-primary-100 rounded-full">Visión Estratégica 2024</span>
+            <h2 class="text-4xl md:text-6xl font-display font-extrabold text-slate-900 mb-6 leading-tight">
+                Impulsando el Futuro del <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-800">Marketing Digital</span>
+            </h2>
+            <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Estrategias de élite potenciadas por Inteligencia Artificial para maximizar el crecimiento de su negocio.
+            </p>
+            <div class="scroll-indicator animate-bounce"></div>
+        </div>
+        <!-- Decorative Elements -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-primary-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-glow"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-glow" style="animation-delay: 1.5s"></div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+
+        <!-- Resumen Ejecutivo -->
+        <section class="mb-20 animate-fade-in-up" style="animation-delay: 0.2s">
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden border-l-4 border-l-primary-600">
+                <div class="accent-line"></div>
+                <h2 class="text-3xl font-display font-extrabold text-slate-900 mb-6 uppercase tracking-tight">Resumen Ejecutivo</h2>
+                <div class="prose max-w-none text-lg">
+                    <p>
+                        <strong>NDTech</strong> es una agencia de marketing digital especializada en publicidad efectiva y basada en datos, enfocada en la gestión y optimización de campañas de <strong>Meta Ads</strong>. Su público objetivo son dueños de negocios que buscan expandir su alcance y maximizar el retorno de inversión.
+                    </p>
+                    <p>
+                        La propuesta de valor principal de NDTech es la implementación de <strong>inteligencia artificial (IA) avanzada</strong> que emula y optimiza estrategias de profesionales de marketing de élite. Con un presupuesto inicial de 10,000 MXN, NDTech busca ofrecer servicios de alta calidad, eficientes y con resultados medibles para el crecimiento sostenido de sus clientes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-20">
+            <!-- Descripción del Negocio -->
+            <section class="md:col-span-7 glass-card p-8 rounded-3xl animate-fade-in-up" style="animation-delay: 0.3s">
+                <h2 class="text-2xl font-display font-extrabold text-slate-900 mb-6">Descripción del Negocio</h2>
+                <div class="prose max-w-none">
+                    <p>
+                        NDTech opera como una agencia de marketing digital, cuyo objetivo es capacitar a las empresas para alcanzar sus metas de marketing a través de campañas publicitarias estratégicas. La agencia comprende las complejidades del panorama digital y la necesidad de una presencia online robusta.
+                    </p>
+                    <p>
+                        Ofrece un servicio integral que incluye <strong>planificación estratégica</strong>, segmentación precisa, creación de contenido persuasivo y monitoreo continuo. NDTech se posiciona como un socio estratégico para negocios que buscan transformar su inversión en marketing digital en crecimiento tangible y sostenible.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Análisis de Mercado -->
+            <section class="md:col-span-5 bg-slate-900 text-white p-8 rounded-3xl shadow-2xl animate-fade-in-up" style="animation-delay: 0.4s">
+                <h2 class="text-2xl font-display font-extrabold mb-6">Análisis de Mercado</h2>
+                <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
+                    <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                        <p class="font-bold text-primary-400 mb-1">Público Objetivo</p>
+                        Dueños de empresas de diversos tamaños que carecen de tiempo o recursos internos.
+                    </div>
+                    <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                        <p class="font-bold text-primary-400 mb-1">Tendencia</p>
+                        Creciente demanda en Meta Ads (Facebook e Instagram) por su precisión de segmentación.
+                    </div>
+                    <p>
+                        El análisis indica que este segmento está dispuesto a invertir en soluciones que prometan eficiencia, innovación y un retorno de inversión superior.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Productos y Servicios -->
+        <section class="mb-20 animate-fade-in-up" style="animation-delay: 0.5s">
+            <h2 class="text-3xl font-display font-extrabold text-slate-900 mb-10 text-center">Productos y Servicios: Meta Ads</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-primary-400 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Creación y Configuración</h3>
+                    <p class="text-sm text-slate-600">Diseño y lanzamiento de campañas adaptadas a objetivos específicos.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-primary-400 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Segmentación Avanzada</h3>
+                    <p class="text-sm text-slate-600">Identificación de audiencias mediante análisis profundo de datos.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-primary-400 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Optimización Continua</h3>
+                    <p class="text-sm text-slate-600">Monitoreo diario, pruebas A/B y ajuste estratégico de pujas.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-primary-400 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Diseño Creativo</h3>
+                    <p class="text-sm text-slate-600">Imágenes, videos y copys persuasivos diseñados para convertir.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-primary-400 hover:shadow-xl transition-all group md:col-span-2 lg:col-span-1">
+                    <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Reporting y Análisis</h3>
+                    <p class="text-sm text-slate-600">Informes detallados y recomendaciones estratégicas mensuales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ventaja Competitiva -->
+        <section class="mb-20 animate-fade-in-up" style="animation-delay: 0.6s">
+            <div class="relative rounded-3xl overflow-hidden bg-primary-900 text-white p-8 md:p-16">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primary-600/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="accent-line !bg-white"></div>
+                        <h2 class="text-3xl font-display font-extrabold mb-6">Ventaja Competitiva: IA de Vanguardia</h2>
+                        <p class="text-primary-100 text-lg mb-8">
+                            Nuestra IA emula las tácticas de especialistas experimentados, garantizando un rendimiento superior a cualquier gestión manual tradicional.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="mt-1 flex-shrink-0 w-5 h-5 bg-primary-600 rounded-full flex items-center justify-center text-[10px] font-bold">✓</div>
+                                <div><span class="font-bold">Optimización en Tiempo Real:</span> Análisis masivo de datos para ajustes instantáneos.</div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="mt-1 flex-shrink-0 w-5 h-5 bg-primary-600 rounded-full flex items-center justify-center text-[10px] font-bold">✓</div>
+                                <div><span class="font-bold">Eficiencia Operativa:</span> Más enfoque en estrategia y menos en gestión manual.</div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="mt-1 flex-shrink-0 w-5 h-5 bg-primary-600 rounded-full flex items-center justify-center text-[10px] font-bold">✓</div>
+                                <div><span class="font-bold">Escalabilidad:</span> Crecimiento sin compromiso de la calidad del servicio.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block">
+                        <div class="aspect-square glass-card !bg-white/5 border-white/10 rounded-full p-8 flex items-center justify-center">
+                            <div class="w-full h-full border-2 border-dashed border-white/20 rounded-full animate-spin" style="animation-duration: 20s;"></div>
+                            <div class="absolute flex flex-col items-center">
+                                <div class="text-5xl mb-2">🤖</div>
+                                <div class="text-xs tracking-tighter uppercase font-bold text-primary-400">NDTech AI Engine</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plan Financiero Inicial -->
+        <section class="animate-fade-in-up" style="animation-delay: 0.7s">
+            <h2 class="text-3xl font-display font-extrabold text-slate-900 mb-8">Plan Financiero Inicial</h2>
+            <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm">
+                <div class="p-8 border-b border-slate-100 flex flex-wrap justify-between items-center gap-4">
+                    <p class="text-slate-600 max-w-lg">Presupuesto inicial distribuido estratégicamente para establecer bases operativas sólidas.</p>
+                    <div class="bg-primary-50 px-6 py-3 rounded-2xl">
+                        <span class="text-xs font-bold text-primary-600 uppercase block">Total Inicial</span>
+                        <span class="text-2xl font-display font-extrabold text-slate-900">10,000 MXN</span>
+                    </div>
+                </div>
+                <div class="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-700 font-medium">Software y Herramientas (40%)</span>
+                            <span class="font-bold text-slate-900">4,000 MXN</span>
+                        </div>
+                        <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                            <div class="bg-primary-600 h-full w-[40%]"></div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-700 font-medium">Marketing y Promoción (30%)</span>
+                            <span class="font-bold text-slate-900">3,000 MXN</span>
+                        </div>
+                        <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                            <div class="bg-primary-500 h-full w-[30%]"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-700 font-medium">Capital de Trabajo (20%)</span>
+                            <span class="font-bold text-slate-900">2,000 MXN</span>
+                        </div>
+                        <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                            <div class="bg-primary-400 h-full w-[20%]"></div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-700 font-medium">Formación y Desarrollo (10%)</span>
+                            <span class="font-bold text-slate-900">1,000 MXN</span>
+                        </div>
+                        <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                            <div class="bg-primary-300 h-full w-[10%]"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-6 text-center text-sm text-slate-500 font-medium">
+                    Las ganancias se reinvertirán para expandir infraestructura y tecnología.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Simple Bottom Section -->
+    <div class="max-w-4xl mx-auto px-6 pb-12 text-center opacity-50 text-xs tracking-widest uppercase">
+        NDTech • Plan de Desarrollo Estratégico
+    </div>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
